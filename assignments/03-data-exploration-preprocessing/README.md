@@ -1,62 +1,56 @@
-# 📊 DL-DA02 — Exploratory Data Analysis and Data Preprocessing
-
-A comprehensive analysis exploring exploratory data analysis (EDA), handling missing values, outlier detection, data scaling, and categorical encoding techniques in machine learning workflows.
+# 📊 BT02 — Exploratory Data Analysis and Data Preprocessing
 
 ## Overview
 
-This assignment examines two main parts:
-
-1. **Exploratory Data Analysis (EDA) & Data Preprocessing** — examining data types, calculating descriptive statistics (Mean, Median, Mode), handling missing values, detecting outliers, standardizing features, and encoding categorical variables.
-2. **Extended Age Distribution Analysis** — analyzing a larger sample dataset (27 samples) to calculate statistical measures, quartiles, boxplot summaries, and performing data binning/discretization.
+This assignment focuses on exploratory data analysis (EDA) and data preprocessing. It covers descriptive statistics, data visualization, missing value handling, outlier detection, feature scaling, categorical encoding, and feature selection. The assignment also includes an analysis of an age dataset using statistical measures, outlier detection, and data binning techniques.
 
 ## Topics Covered
 
-### 1. Exploratory Data Analysis & Descriptive Statistics
+- **Descriptive Statistics:** Calculating the mean, median, and mode of numerical attributes.
+- **Data Visualization:** Interpreting histograms and boxplots to understand data distributions and identify potential outliers.
+- **Relationship Analysis:** Examining relationships between age and salary and identifying unusual data values.
+- **Missing Value Handling:** Detecting missing values and comparing mean and median imputation methods.
+- **Outlier Detection:** Applying the Interquartile Range (IQR) method to identify outliers and handling invalid values.
+- **Feature Scaling:** Applying Z-score standardization to numerical data.
+- **Categorical Encoding:** Using binary encoding for purchase labels and one-hot encoding for gender.
+- **Feature Selection:** Identifying relevant features, removing unnecessary identifiers, and defining the target variable.
+- **Age Distribution Analysis:** Calculating statistical measures, detecting outliers, and applying equal-width and equal-frequency binning.
 
-- Identifying numerical and categorical attributes
-- Calculating central tendencies: Mean, Median, and Mode
-- Handling data anomalies and unreasonable values (e.g., negative salary errors)
-- Recognizing skewed distributions (Positive skewness where Mean > Median)
+## Repository Structure
 
-### 2. Data Cleaning & Missing Value Imputation
+```text
+02-data-preprocessing/
+├── README.md
+└── report.docx
+```
 
-- Identifying missing values and calculating missing ratios (percentage-based analysis)
-- Comparing imputation strategies using Mean versus Median
-- Evaluating the robustness of Median imputation in the presence of extreme outliers and skewed features
+## Requirements
 
-### 3. Outlier Detection & Feature Scaling
+- Microsoft Word or a compatible document editor for viewing the report.
 
-- Detecting outliers using the Interquartile Range ($IQR$) method and upper-bound thresholds ($Q3 + 1.5 \times IQR$)
-- Feature scaling using Z-score normalization ($z = \frac{X - \mu}{\sigma}$) to improve model convergence
-- Categorical encoding: Binary Encoding and One-Hot Encoding
+## How to Run
 
-### 4. Data Reduction & Feature Selection
-
-- Feature selection: Removing irrelevant identifier columns (e.g., ID attributes)
-- Evaluating the necessity of dimensionality reduction techniques (e.g., PCA) based on dataset dimensions
-
-## Key Takeaways
-
-- Data cleaning is a critical first step to handle unreasonable entries and missing values before model training.
-- Median is more robust than Mean when handling datasets with severe outliers or skewed distributions.
-- Z-score normalization removes unit discrepancies and assists gradient-based algorithms in converging faster.
-- Feature selection eliminates noise and redundant identifiers, simplifying the dataset structure without losing core information.
+This assignment is documented in a report. Open `report.docx` to review the exercises, calculations, data analysis, and conclusions.
 
 ## Learning Outcomes
 
-Through this assignment, I explored foundational data preprocessing techniques, practiced handling real-world data imperfections, and understood the mathematical principles behind descriptive statistics and data scaling.
+After completing this assignment, I practiced how to:
 
-## References
-
-- Sridhar, S. Data Preprocessing and Exploratory Data Analysis Principles.
-- scikit-learn documentation. *Preprocessing data*.
+- Calculate and interpret descriptive statistical measures.
+- Analyze data distributions using histograms and boxplots.
+- Identify missing values and choose appropriate imputation methods.
+- Detect outliers using the IQR method and recognize invalid data values.
+- Apply Z-score standardization to numerical features.
+- Encode categorical variables using binary and one-hot encoding.
+- Select relevant features and identify the target variable for prediction.
+- Apply equal-width and equal-frequency binning to numerical data.
 
 ## Assignment Information
 
-- **Course:** Deep Learning / Machine Learning Foundations
-- **Assignment:** BT02 — Exploratory Data Analysis and Data Preprocessing
-- **Repository:** [deep-learning-lab](https://github.com/gemchan09/deep-learning-lab)
+- **Course:** Deep Learning
+- **Exercise:** BT02 — Exploratory Data Analysis and Data Preprocessing
+- **Institution:** Saigon University
 
----
+## Academic Note
 
-*This document summarizes my coursework and learning notes. The ideas discussed are based on the assigned exercises and referenced scientific materials.*
+This repository documents the analysis, calculations, and learning outcomes from the original assignment report. Statistical values and observations are based on the submitted coursework.
